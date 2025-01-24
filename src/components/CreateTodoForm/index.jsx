@@ -8,7 +8,7 @@ export const CreateTodoForm = () => {
    const {createTodos} = useContext(TodoContext)
    
    const submit = (formData) =>{
-    createTodos(formData)
+    createTodos.mutate(formData)
    }
     return (
         <form onSubmit={handleSubmit(submit)}>
